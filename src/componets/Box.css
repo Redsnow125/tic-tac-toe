@@ -1,0 +1,21 @@
+.boxStyle{
+    background-color: aqua;
+    height: 350px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 5%;
+
+}
+
+
+.buttonStyle{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    color: red;
+    border-radius: 20%;
+    font-size: 60px;
+}
