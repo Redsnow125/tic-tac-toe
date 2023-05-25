@@ -1,28 +1,9 @@
-import './Box.css'
-import Button from './O';
-let xORo = '.'
-const switcher = () =>{
-  if(xORo === 'X'){
-      xORo = 'O'
-  }else{
-      xORo = 'X'
-  }
-}
+import React from "react";
+import "./Box.css";
 
-function Square() {
-
-  return (
-    <div className='boxStyle'>
-      <Button {...xORo} onClick={switcher}/>
-      <Button {...xORo} onClick={switcher}/>
-      <Button {...xORo} onClick={switcher}/>
-      <Button {...xORo} onClick={switcher}/>
-      <Button {...xORo} onClick={switcher}/>
-      <Button {...xORo} onClick={switcher}/>
-      <Button {...xORo} onClick={switcher}/>
-      <Button {...xORo} onClick={switcher}/>
-      <Button {...xORo} onClick={switcher}/>
-    </div>
+export const Box = ({value,onClick}) => {
+  const style = value === "X" ? "box x" : "box o";
+  return( 
+  <button className={style} onClick={onClick}>{value}</button>
   );
-}
-export default Square;
+};
